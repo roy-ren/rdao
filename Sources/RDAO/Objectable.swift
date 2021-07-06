@@ -6,15 +6,38 @@
 //
 
 import Foundation
-import RealmFFI
+import RealmSwift
+import Realm
 
 public protocol Objectable: Codable {
     
 }
 
 func test() {
-//    let a = realm_open(<#T##config: OpaquePointer!##OpaquePointer!#>)
+//    let configuration = realm_config_new()
+//    let path = "/document/realm"
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 final class ObjectableDecoder: Decoder {
 	var codingPath: [CodingKey] = []
