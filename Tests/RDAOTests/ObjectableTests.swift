@@ -15,19 +15,19 @@ final class ObjectableTests: XCTestCase {
 extension ObjectableTests {
 	struct MokeElement: Objectable {
 
-//		let string: String
+		let string: String
 		let int: Int
 		let int8: Int8
 		let int16: Int16
 		let int32: Int32
 		let int64: Int64
-//		let uint: UInt
+		let uint: UInt
 		let uint8: UInt8
 		let uint16: UInt16
 		let uint32: UInt32
 		let uint64: UInt64
 		let bool: Bool
-//		let optionnal: String?
+		let optionnal: String?
 		let persion: Persion
 	}
 
@@ -37,7 +37,7 @@ extension ObjectableTests {
 		let gender: Gender
 	}
 
-	enum Gender: Codable {
+	enum Gender: String, Codable {
 		case male
 		case female
 	}
